@@ -9,9 +9,12 @@ for(ev of allEvents ){
         ev.style.border="100px solid white";
 }
 ev.currentTarget.style.border="100px solid grey";
+    console.log(ev.currentTarget);
+    
 
 }
 function btn(){
+    
     
     
 
