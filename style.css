@@ -133,8 +133,7 @@ body{
     font-size: x-large;
 }
 .btn button:hover{
-    border: 3px rgb(127, 36, 36) solid;
-    background-color: rgb(42, 1, 1);
+    
 }
 .SECTION{
     display: flex;
@@ -148,9 +147,10 @@ body{
 
 }
 
+
 /*_________________ section 2_____________________________ */
 .global-btn{
-    background-color: brown;
+    background-color: rgb(120, 12, 12);
     display: flex;
     justify-content: space-around;
     width:40%;
@@ -171,10 +171,7 @@ body{
     padding: 30px 50px;
 }
 .dernier-btn{
-    background-color:rgb(58, 0, 0);
-    padding: 20px 40px;
-    
-     
+    padding: 20px 40px; 
 }
 .tahakom-f-btn-end{
     width: 100%;
@@ -201,6 +198,56 @@ body{
     margin-left: 10px;
     display: inline-block;
 }
+.dernier-btn{
+    background-color: rgb(141, 15, 15);
+    padding: 20px 50px;
+    color: rgb(113, 5, 34);
+    font-size: x-large;   
+}
+/*_________________ section 3_____________________________ */
+.titre-3{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.titre-3 h2{
+     font-size: x-large;
+    color:white;
+    background-color: rgb(162, 57, 57);
+    text-shadow:  20px 12px 12px rgb(255, 8, 8);
+    display: inline-block;
+
+}
+.case-1{
+    width: 49%;
+    background-color: rgb(9, 8, 8);
+    
+
+}
+.case-2{
+    width: 49%;
+    background-color: rgb(9, 8, 8);
+}
+.deux-case{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: fit-content;
+    height: 70vh;
+}
+.case-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#carde-vide{
+    height: max-content;
+    
+}
 
 @media(max-width:600px) {
    .container{
@@ -211,7 +258,6 @@ body{
     width: 100%;
     gap: 50px;
 }
-
 .carde-2 {
     width: 50%;
 }
@@ -234,6 +280,6 @@ body{
     flex-direction: column;
     gap: 100PX;
 }
-/* _________________________section-2_____________________________________ */
+/* _________________________section-3_____________________________________ */
 
 }

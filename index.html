@@ -6,49 +6,50 @@
     <meta name="viewport">
     <title>Document</title>
     <link rel="stylesheet" href="/bref-4/style.css">
+
 </head>
 
 <body>
-    <div class="SECTION">
+    <div class="SECTION" id="SECTION">
         <div class="title">
             <h2 class="titre-1">Choix de événement</h2>
         </div>
-        <section class="container">
-            <div id="ee" onclick=" changeDeBorder()" class=" carde-1">
+        <section id="container" class="container">
+            <div id="ee" onclick=" selectioner(event)" class=" carde-1">
                 <div class="image">
                     <img src="download.jpeg" alt="image">
                 </div>
-                <div id="yy" class="text">
+                <div id="yy" class="text test">
                     <p>Date:12/08/1980</p>
                     <p>lieu : marrakech</p>
                     <p>place restant :100 </p>
                 </div>
             </div>
-            <div id="ff" onclick=" changeDeBorder()" class="carde-2">
+            <div id="ff" onclick=" selectioner(event)" class="carde-2">
                 <div class="image-2">
                     <img src="9782701164366_1_75.jpg" alt="image">
                 </div>
-                <div class="text-2">
+                <div class="text-2 test">
                     <p>Date:4/18/2310</p>
                     <p>lieu : agadir</p>
                     <p>place restant: 20 </p>
                 </div>
             </div>
-            <div id="jj" onclick=" changeDeBorder()" class="carde-3">
+            <div id="jj" onclick=" selectioner(event)" class="carde-3">
                 <div class="image-3">
                     <img src="download (1).jpeg" alt="image">
                 </div>
-                <div class="text-3">
+                <div class="text-3 test">
                     <p>Date:12/20/2016</p>
                     <p>lieu : bni mlal</p>
                     <p>place restant: 30 </p>
                 </div>
             </div>
-            <div id="hh" class="carde-4" onclick=" changeDeBorder()">
+            <div id="hh" class="carde-4" onclick=" selectioner(event)">
                 <div class="image-4">
                     <img src="download (1).jpeg" alt="image">
                 </div>
-                <div class="text-4">
+                <div class="text-4 test">
                     <p>Date:10/12/2006</p>
                     <p>lieu : azilal</p>
                     <p>place restant: 20 </p>
@@ -56,16 +57,16 @@
 
             </div>
         </section>
-        <div onclick="Reserver" class="btn">
-            <button onclick="btn()">Reserver</button>
+        <div class="btn">
+            <button id="bbtn" onclick="btn()">Reserver</button>
         </div>
 
     </div>
-    <section class="container-2">
+    <section class="container-2" id="container-2" style="display: none;" >
         <div class="titre-2">
             <h2>l'evenement Qui selectionner</h2>
         </div>
-        <!-- <div>pour l'image afficher -->
+        <div id="cardeVide">
         </div>
         <h4 class="titre-de-teky">*nombre des ticki*</h4>
         <div class="global-btn">
@@ -79,6 +80,29 @@
         </div>
         
     </section>
+    <section class="container-3" id="container-3" style="display: none;">
+        <div  class="titre-3">
+            <h2>les information</h2>
+        </div>
+        <div class="deux-case">
+            <div class="case-1">
+                <form action="#" class="case-1">
+                    <label for="nom" class="form">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Voter Name">
+                    <label for="Prenom" class="form">Prenom</label>
+                    <input type="text" id="Prenom" name="Prenom" placeholder="Voter Prenom">
+                    <label for="Email" class="form">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Voter Email">
+                    <label for="telephne" class="form">Telephne</label>
+                    <input type="tel" id="telephne" name="telephne" placeholder="Voter Numerau de Telephne">
+                </form>
+            </div>
+            <div class="case-2"></div>
+    </div>
+    </section>
+    <script src="jsss.js">
+
+    </script>
 </body>
 
 </html>
