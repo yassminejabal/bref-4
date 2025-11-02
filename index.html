@@ -15,7 +15,7 @@
             <h2 class="titre-1">Choix de événement</h2>
         </div>
         <section id="container" class="container">
-            <div id="ee" onclick="selectioner(event)" class=" carde-1">
+            <div id="ev1" onclick="selectioner(event)" class=" carde-1">
                 <div class="image">
                     <img src="download.jpeg" alt="image">
                 </div>
@@ -25,7 +25,7 @@
                     <p>place restant :100 </p>
                 </div>
             </div>
-            <div id="ff" onclick=" selectioner(event)" class="carde-2">
+            <div id="ev2" onclick=" selectioner(event)" class="carde-2">
                 <div class="image-2">
                     <img src="9782701164366_1_75.jpg" alt="image">
                 </div>
@@ -35,7 +35,7 @@
                     <p>place restant: 20 </p>
                 </div>
             </div>
-            <div id="jj" onclick=" selectioner(event)" class="carde-3">
+            <div id="ev3" onclick=" selectioner(event , 'ev3')" class="carde-3">
                 <div class="image-3">
                     <img src="download (1).jpeg" alt="image">
                 </div>
@@ -45,7 +45,7 @@
                     <p>place restant: 30 </p>
                 </div>
             </div>
-            <div id="hh" class="carde-4" onclick=" selectioner(event)">
+            <div id="ev4" class="carde-4" onclick=" selectioner(event)">
                 <div class="image-4">
                     <img src="download (1).jpeg" alt="image">
                 </div>
@@ -62,7 +62,7 @@
         </div>
 
     </div>
-    <section class="container-2" id="container-2" style="display: none;" >
+    <section class="container-2" id="container-2" style="display: none;">
         <div class="titre-2">
             <h2>l'evenement Qui selectionner</h2>
         </div>
@@ -70,24 +70,32 @@
         </div>
         <h4 class="titre-de-teky">*nombre des ticki*</h4>
         <div class="global-btn">
-            
-            <button class="btn-plus">+</button>
-            <span>1</span>
-            <button class="btn-moin">-</button>
+
+            <button onclick="changeQuantite(true)" class="btn-plus">+</button>
+            <span id="nombre-de-teqy">1</span>
+            <button onclick="changeQuantite(false)" class="btn-moin">-</button>
         </div>
-        <div class="tahakom-f-btn-end">
-            <button  class="dernier-btn">suivant</button>
+        <div class="deux-btn">
+
+            <div class="btt2">
+                <button id="btn-2" onclick="btn2()" class="btn-2">precedent</button>
+            </div>
+            <div class="tahakom-f-btn-end">
+                <button class="dernier-btn" onclick="btn3()">suivant</button>
+            </div>
         </div>
-        
+
+
+
     </section>
     <section class="container-3" id="container-3" style="display: none;">
-        <div  class="titre-3">
+        <div class="titre-3">
             <h2>les information</h2>
         </div>
         <div class="deux-case">
             <div class="case-1">
-                <form action="#" class="case-1">
-                    <label for="nom" class="form">Nom</label>
+                <form action="#" class="case-1" id="form">
+                    <label for="nom" class="form ">Nom</label>
                     <input type="text" id="nom" name="nom" placeholder="Voter Name">
                     <label for="Prenom" class="form">Prenom</label>
                     <input type="text" id="Prenom" name="Prenom" placeholder="Voter Prenom">
@@ -95,10 +103,16 @@
                     <input type="email" id="email" name="email" placeholder="Voter Email">
                     <label for="telephne" class="form">Telephne</label>
                     <input type="tel" id="telephne" name="telephne" placeholder="Voter Numerau de Telephne">
+                    <input type="submit" id="submit">
                 </form>
+                <!-- <button type="submit" id="submit" >submit</button> -->
             </div>
-            <div class="case-2"></div>
-    </div>
+            <div class="case-2" id="case-2">
+
+            
+
+            </div>
+        </div>
     </section>
     <script src="jsss.js">
 
@@ -106,4 +120,3 @@
 </body>
 
 </html>
-
