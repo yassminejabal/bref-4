@@ -389,5 +389,25 @@ input{
     }
 
     /* _________________________section-3_____________________________________ */
+    .deux-case{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 100px;
+    }
+    .case-1{
+        width: 100%;
+        height: auto;
+    }
+    .case-2{
+        width: 100%;
+        height: auto;
+    }
+    .bbtnn{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
 
 }
