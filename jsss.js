@@ -33,6 +33,10 @@ function btn3() {
         section3.style.display = "block";
         
     }
+    document.getElementById("form").addEventListener("submit",(event) => {
+            event.preventDefault()
+            validation()
+        })
 }
 
 
@@ -84,6 +88,13 @@ function changeQuantite(operation) {
         }
     }
     document.getElementById("nombre-de-teqy").innerHTML = quatite;
+}
+function validation(){
+    let nom = document.getElementById("nom").value;
+    let prenom = document.getElementById("Prenom").value;
+    let email = document.getElementById("email").value;
+    let telephne = document.getElementById("telephne").value;
+
 }
 
 
